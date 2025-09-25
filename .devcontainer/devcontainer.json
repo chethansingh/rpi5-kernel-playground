@@ -1,8 +1,5 @@
 {
-  "name": "Raspberry Pi 5 Kernel Dev",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {}
-  },
-  "postCreateCommand": "apt-get update && apt-get install -y qemu-system-arm qemu-system-misc gcc-aarch64-linux-gnu make"
+  "name": "RPI5 Kernel Playground",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu"
+  "features": {}
 }
