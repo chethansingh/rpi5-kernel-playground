@@ -1,5 +1,26 @@
 {
   "name": "RPI5 Kernel Playground",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu"
-  "features": {}
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.makefile-tools",
+        "ms-vscode.cmake-tools",
+        "timonwong.shellcheck",
+        "ms-vscode.hexeditor",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
 }
